@@ -1,9 +1,11 @@
-#Gauge plugin installation
+# Gauge plugin installation
+
 Gauge provides only few IDE plugins. The complete list can be found here: https://gauge.org/plugins/
 
 This description describes how to setup VSCode and IntelliJ plugins.
 
-##Install Gauge
+## Install Gauge
+
 Fist of all install `Gauge` itself.
 
 Install gauge with brew:
@@ -29,7 +31,7 @@ Install gauge python package:
 pip install getgauge
 ```
 
-##Setup IntelliJ - java
+## Setup IntelliJ - java
 1. Install gauge plugin: `Preferences... -> Plugins -> Gauge`
 2. Create a new Gauge project: `File -> New -> Project...`
 3. Select Gauge as project type on the left, then click `Next`
@@ -41,19 +43,19 @@ pip install getgauge
 `
 7. Reload the project
 
-##Setup VSCode - js, python
+## Setup VSCode - js, python
 Install Gauge extension
-###NodeJS
+### NodeJS
 1. Create inside the `env/default` folder a `js.properties`file
 2. Change the value `Language` field of `manifest.json` to `js`
 3. Reload the window
 
-###Python
+### Python
 1. Create inside the `env/default` folder a `python.properties`file
 2. Change the value `Language` field of `manifest.json` to `python`
 3. Reload the window
 
-####Important
+#### Important
 In `env/default` folder always one language specific properties file can remain.
 
 The `"Language"` field of `manifest.json` file should match the properties file in `env/default` folder
